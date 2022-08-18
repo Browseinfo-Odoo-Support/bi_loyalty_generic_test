@@ -1,0 +1,65 @@
+Version 14.0.0.1: (11/11/20)
+	- Fixed issue of traceback generated while adding loyalty points from wizard in sale order.
+
+==>14.0.0.2 : added french translation.
+==>14.0.0.3 : Improved Index.
+
+=> 14.0.0.4 : Improved latest functionality in feature list.
+
+Version 14.0.0.5 : (12/03/21)
+		- Solve issue of remove line from cart.
+
+Version 14.0.0.6 : (28/04/21)
+		- Update POS Code for loyalty functionality.
+
+Version 14.0.0.7 : (28/04/21)
+		- Allow user to redeem same amount as order amount from sales.
+		- Solved issue of redeem points in duplicated sale order.
+		- Add warning to restrict user to change customer after redeem in pos.
+
+Version 14.0.0.8 : (25/11/2021)
+		- Fixed the issue when user apply his/her voucher in website sale order and
+		  there is 0 redeem points at that time coupon amount also get 0.0 instead of
+		  actual coupon amount.
+
+Version 14.0.0.9 : (19/01/2022)
+		- Display the 'Loyalty Points Earned' and 'Loyalty Points Redeemed' for a particular e-comm sale order.
+
+date 16th/02/2022
+version 14.0.1.0
+- issue solve while open session generating warning
+
+Version 14.0.1.1 : (05/05/22)
+		- Configuration to be added in the backend based on the configuration the loyalty point will be added to the customer loyalty point account.
+		- Add the configuration tier so based on the total sales of the customer the loyalty points will be added to the customer loyalty account.
+		- provide the check box in the customer form view if it is true then the loyalty point will not be calculated and if it is false then it will calculate the loyalty point.
+		- Manually loyalty points for customer to be added.
+		- Provide new functionality to import the loyalty points using the import loyalty template .
+		- Add the new another feature for manual loyalty point where the user will select the multiple customer and assign the loyalty points to the customer manually using the wizard.
+		- Add checkbox promotion in the website setting.
+		- Set a default customer tier When a new customer signs up.
+
+Version 14.0.1.2 : (06/05/22)
+		- Fixed the issue of loyalty point calculation as per the tier concept.
+		- Fixed the issue in restrict loyalty points from the customer-specific scenario. 
+
+Version 14.0.1.3 : (16/05/22)
+		- Fixed the issue of Loyalty points calculation for backend, website and pos.
+		- Fixed the issue of Manual Loyalty Points not Updated in customer.
+		- Fixed the singleton error when redeem Loyalty points from sale order, website and pos.
+
+Version 14.0.1.4 : (05/07/22)
+		- Add Loyalty Management link on portal.
+		- Make Redeem points field editable on Redemption Rule.
+		- Add ribbon color and ribbon text field on Loyalty Tier Configuration.
+		- Show ribbon on customer form view according to Tier.
+
+Version 14.0.1.5 : (01/08/22)
+		- Change loyalty balance calculation in backend, website and pos.
+		- Fixed the issue in redeem points on Point of Sales.
+		- Fix build errors.
+		- Change Ribbon colour to HEX input.
+
+Version 14.0.1.6 : (16/08/22)
+		- Fixed the issue in redeem points on Point of Sales.
+		- Change Loyalty Reedemption points on backend, website and pos.

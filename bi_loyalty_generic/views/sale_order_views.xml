@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="sale_order_loyalty_form_view">
+        <field name="name">sale.order.loyalty.form.view</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='amount_tax']" position="before">
+                <field name="total_sales" force_save="1" string="Total Sales"  widget='monetary' invisible="1"/>
+                <field name="order_credit_points" readonly="1" string="Loyalty Points Earned"/>
+                <field name="order_redeem_points" readonly="1" string="Loyalty Points Redeemed"/>
+            </xpath>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="res_partner_ribbon_form_view">
+        <field name="name">res.partner.form.view</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='image_1920']" position="before">
+                <widget name="web_ribbon" attrs="{'invisible': [('ribbon_color', '=', False)]}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

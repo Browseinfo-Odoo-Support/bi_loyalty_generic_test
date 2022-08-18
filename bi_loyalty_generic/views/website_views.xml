@@ -1,0 +1,14 @@
+<odoo>
+    <data>
+        <record id="website_action" model="ir.actions.act_window">
+			<field name="name">Website Tire</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">website</field>
+			<field name="view_mode">form</field>
+			<field name="target">new</field>
+		</record>
+
+		<menuitem name="Configuration Tier" id="website_menu" action="website_action"  parent="website.menu_website_global_configuration"
+				  sequence="90"/>
+    </data>
+</odoo>
