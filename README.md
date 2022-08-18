@@ -1,0 +1,1 @@
+# bi_loyalty_generic_test
